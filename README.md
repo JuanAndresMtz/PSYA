@@ -32,29 +32,23 @@ efttool can be found at: https://csb.ethz.ch/tools/software/efmtool.html
  %**************************************************************************************************************************
  
 %%%%%%%%%% EmSoftwaretool was used for EM calculation                             
-%%%% EM Matrix Loading from Efmtools software is performed on this script   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%% EM Matrix Loading from Efmtools software is performed on this script   
+%%%% with its output diverted to the following variables:                   
 
-%%%% with its output diverted to the following variables:                   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%  efmMatrix.int_met = names of intracellular metabolites (array)       
+%%%%  efmMatrix.ext_met = names of extracellular metabolites (array)        
 
-%%%%  efmMatrix.int_met = names of intracellular metabolites (array)        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%  efmMatrix.react_name = reaction names (array)                        
 
-%%%%  efmMatrix.ext_met = names of extracellular metabolites (array)        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
+%%%%  efmMatrix.st = stoichiometric matrix (rows correspond to internal     
 
-%%%%  efmMatrix.react_name = reaction names (array)                         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%                 metabolites, columns to reactions)                    
 
-%%%%  efmMatrix.st = stoichiometric matrix (rows correspond to internal     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%  efmMatrix.ext = same structure as st, but rows correspond to external metabolites
 
-%%%%                 metabolites, columns to reactions)                     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%  efmMatrix.ems = Elementary modes data (EMs), (rows correspond to      
+%%%%                  reactions, columns to EM)                            
 
-
-%%%%  efmMatrix.ext = same structure as st, but rows correspond to          %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%%%%                  external metabolites                                  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%%%%  efmMatrix.ems = Elementary modes data (EMs), (rows correspond to      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%%%%                  reactions, columns to EM)                             %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%%%%  efmMatrix.ext_out = EMs output matrix (efmMatrix.ext*efmMatrix.ems);  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
+%%%%  efmMatrix.ext_out = EMs output matrix (efmMatrix.ext*efmMatrix.ems);    
 
 
