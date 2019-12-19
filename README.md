@@ -16,35 +16,33 @@ For more information please contact: andres.amdg@gmail.com
 
 efttool can be found at: https://csb.ethz.ch/tools/software/efmtool.html
 
-%*************************************************************************
- %**** Polar Space Yield Analysis (PSYA) program solution example ********
- %************************************************************************
- %                          by J.A.Martinez, L.A.Palomares and O.T.Ramirez 
- %                                           contact:andres.amdg@gmail.com 
- %
- %%% THIS IS AN EXAMPLE OF POSSIBLE PROGRAMMING ON MATLAB FOR THE USE OF 
- %%% THE PSYA APPROACH, IT WAS MADE FOR SOLVING THE PRESENT ARTICLE EMA 
- %%% FOR CHO-S CELL METABOLIC MODELING. MODIFICATIONS IS HEREIN AUTHORIZED 
- %%% FOR ITS USE ON OTHER SYSTEMS OR OTHER NEEDS INTENDED FOR METABOLIC
- %%% MODELING, PLEASE CITE THE ARTICLE IF TOTAL OR FRACTIONAL SECTIONS 
- %%% USED ARE TO BE PUBLISHED. IF YOU NEED EXAMPLE DATA PLEASE CONTACT US
- %************************************************************************
- %************************************************************************
- %************************************************************************
+%*************************************************************************************************************************** %**** Polar Space Yield Analysis (PSYA) program solution example ***********************************************************
+ %**************************************************************************************************************************
+ %                          by J.A.Martinez, L.A.Palomares and O.T.Ramirez************************************************** 
+ %                                           contact:andres.amdg@gmail.com *************************************************
+ %************************************************************************************************************************** 
+ %%% THIS IS AN EXAMPLE OF POSSIBLE PROGRAMMING ON MATLAB FOR THE USE OF   *************************************************
+ %%% THE PSYA APPROACH, IT WAS MADE FOR SOLVING THE PRESENT ARTICLE EMA    *************************************************
+ %%% FOR CHO-S CELL METABOLIC MODELING. MODIFICATIONS IS HEREIN AUTHORIZED *************************************************
+ %%% FOR ITS USE ON OTHER SYSTEMS OR OTHER NEEDS INTENDED FOR METABOLIC    *************************************************
+ %%% MODELING, PLEASE CITE THE ARTICLE IF TOTAL OR FRACTIONAL SECTIONS     *************************************************
+ %%% USED ARE TO BE PUBLISHED. IF YOU NEED EXAMPLE DATA PLEASE CONTACT US  *************************************************
+ %**************************************************************************************************************************
+ %**************************************************************************************************************************
+ %**************************************************************************************************************************
  
-%%% Initial Data allocation and normalization %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%% EmSoftwaretool was used for EM calculation
-%%%% EM Matrix Loading from Efmtools software is performed on this script 
-%%%% with its output diverted to the following variables:
-%%%%  efmMatrix.int_met = names of intracellular metabolites (array)
-%%%%  efmMatrix.ext_met = names of extracellular metabolites (array)
-%%%%  efmMatrix.react_name = reaction names (array)
-%%%%  efmMatrix.st = stoichiometric matrix (rows correspond to internal 
-%%%%                 metabolites, columns to reactions)
-%%%%  efmMatrix.ext = same structure as st, but rows correspond to 
-%%%%                  external metabolites
-%%%%  efmMatrix.ems = Elementary modes data (EMs), (rows correspond to 
-%%%%                  reactions, columns to EM)
-%%%%  efmMatrix.ext_out = EMs output matrix (efmMatrix.ext*efmMatrix.ems);    
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%% EmSoftwaretool was used for EM calculation                             %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%% EM Matrix Loading from Efmtools software is performed on this script   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%% with its output diverted to the following variables:                   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%  efmMatrix.int_met = names of intracellular metabolites (array)        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%  efmMatrix.ext_met = names of extracellular metabolites (array)        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
+%%%%  efmMatrix.react_name = reaction names (array)                         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%  efmMatrix.st = stoichiometric matrix (rows correspond to internal     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%                 metabolites, columns to reactions)                     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%  efmMatrix.ext = same structure as st, but rows correspond to          %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%                  external metabolites                                  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%  efmMatrix.ems = Elementary modes data (EMs), (rows correspond to      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%                  reactions, columns to EM)                             %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%  efmMatrix.ext_out = EMs output matrix (efmMatrix.ext*efmMatrix.ems);  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
